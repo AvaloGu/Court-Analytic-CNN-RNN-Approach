@@ -1,0 +1,11 @@
+gradio
+torch
+torchvision
+numpy
+pandas
+matplotlib
+timm
+opencv-python-headless
+supervision
+Pillow
+prometheus_client==0.16.0
