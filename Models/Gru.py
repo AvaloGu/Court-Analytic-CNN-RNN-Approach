@@ -190,7 +190,7 @@ class GRUStage2(nn.Module):
         # y: (Num of shots in this point,)
 
         # append point separator token
-        point_token = torch.tensor([POINTSEPARATOR], dtype=torch.long, device=y.device)
+        point_token = torch.tensor([POINTSEPARATOR], dtype=torch.long, device=x.device)
         
         if y is not None:
             y = torch.cat((point_token, y), dim=0) # (Num of shots in this point+1,)
